@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- css and other styling -->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa:400,300|Titillium+Web:400,200,300,600' rel='stylesheet' type='text/css'>
+    <script src="https://use.fontawesome.com/84a54ac77b.js"></script>
+
+    <!-- json objects -->
+    <!--<script src="{{ url_for('static', filename='data/display_github.json') }}"></script>-->
+
+    <!-- google analytics script -->
+
+</head>
+<body>
+    <div class="landing-container">
+        <div class="welcome-container" id="welcome">
+            <div class="title" id="welcome-title"></div>
+        </div>
+        <div class="about-container" id="about">
+            <div class="title">
+                <div style="font-weight: 100;">{{ dow }}, {{ month }} {{ date }}
+                </div>
+                {{ time }}
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="title" style="font-weight: 100;">{{ temp.temp }} F
+                <i class='{{ icon }}' style="margin-left: 30px; color: #e8e8e8;" aria-hidden="true"></i>
+            </div>
+            <div class="subtitle">max: {{ temp.temp_max }} F, min: {{ temp.temp_min }} F
+                <div style="margin-left: 30px;">{{ humidity }}% humidity</div></div>
+            <!--<div class="text">-->
+                <!--I'm a graduate of the University of Tennessee Haslam College of Business, with a B.S. in-->
+                <!--Economics with a quantitative focus. While at Tennessee, I studied abroad at the London-->
+                <!--School of Economics for a summer course and at the University of Melbourne for a semester. I also-->
+                <!--enrolled in a broad range of statistics and mathematics courses, such as numerical algorithms and-->
+                <!--special topics in R programming. These courses served as the catalyst-->
+                <!--for my passion for data science and led me to Northwestern’s Master of Science in Analytics (MSiA)-->
+                <!--program.-->
+                <!--<br>-->
+                <!--<br>-->
+                <!--My overarching goal as a data scientist is to improve the quality of life for those using a-->
+                <!--product or service by integrating and efficiently using insights gained from a set of data. More-->
+                <!--specifically, I have an immense interest in applying data science in a variety of fields-->
+                <!--including, but not limited to, healthcare, space exploration, and software development and integration.-->
+                <!--These are ideal fields in which to utilize data science knowledge and which continue to be aligned-->
+                <!--with my personal interests. Within the data science field itself, I have a particular-->
+                <!--interest in data visualization, machine and deep learning, and building tools that help others.-->
+                <!--<br>-->
+                <!--<br>-->
+                <!--My previous experience in data science and software development include undergraduate-->
+                <!--research, predictive modeling as an intern at Alcoa, a nine month practicum project with GE-->
+                <!--Transportation, and a summer internship at NASA’s Jet Propulsion Laboratory developing internal-->
+                <!--tools and acting as a data science consultant.-->
+            <!--</div>-->
+        </div>
+        <br>
+    </div>
+</body>
+<!-- javascript -->
+<script src="{{ url_for('static', filename='js/velocity.js') }}"></script>
+<script src="{{ url_for('static', filename='js/styles.js') }}"></script>
+</html>

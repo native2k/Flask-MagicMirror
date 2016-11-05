@@ -1,0 +1,321 @@
+body {
+    background-color: #000;
+    margin: 25px;
+    overflow: hidden;
+    text-shadow: 1px 1px #fff;
+}
+a {
+    cursor: pointer;
+}
+.error {
+    color: #c90a3a;
+}
+.error-container {
+    position: absolute;
+    padding-right: 5%;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    margin: 4% 10% 20% 20%;
+    max-height: 80%;
+    width: 75%;
+}
+.welcome-container {
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    margin-top: 25%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.about-container {
+    position: absolute;
+    padding-right: 5%;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    margin: 4% 10% 20% 20%;
+    max-height: 80%;
+    width: 75%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+th {
+    padding-right: 25px;
+    font-weight: 300 !important;
+    font-size: 1em;
+}
+.title {
+    font-weight: 400;
+    font-size: 4em;
+    color: #f8f8f8;
+}
+.subtitle {
+    font-weight: 100;
+    font-size: 1em;
+    color: #f8f8f8;
+    text-shadow: none;
+}
+.tertiary-title {
+    font-weight: 400;
+    font-size: 0.85em;
+    color: #888;
+}
+.resume-title {
+    font-weight: 400;
+    font-size: 3em;
+    color: #888;
+}
+.blog-title {
+    font-weight: 400;
+    font-size: 1.75em;
+    color: #888;
+}
+.text {
+    font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+a:hover {
+    color: #c90a3a;
+}
+.css-typing {
+    display: none;
+    width: 1600px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: type 5s steps(50, end); /* css animation only for initial load. JS animation then takes over */
+    animation: type 5s steps(50, end);
+    opacity: 0;
+}
+@keyframes type {
+    from { width: 0; }
+}
+@-webkit-keyframes type {
+    from { width: 0; }
+}
+/* screen height */
+@media screen and ( max-height: 768px ){
+    .welcome-container {
+        margin-top: 10%;
+    }
+    .about-container {
+        margin-top: 8.5%;
+    }
+    .portfolio-container {
+        margin-top: 8.5%;
+    }
+    .resume-container {
+        margin-top: 8.5%;
+    }
+    .hire-container {
+        margin-top: 8.5%;
+    }
+    .blog-container {
+        margin-top: 8.5%;
+    }
+    .admin-container {
+        margin-top: 8.5%;
+    }
+}
+@media screen and ( max-height: 540px ){
+    .welcome-container {
+        margin-top: 7.5%;
+    }
+    .about-container {
+        margin-top: 7.5%;
+    }
+    .portfolio-container {
+        margin-top: 7.5%;
+    }
+    .resume-container {
+        margin-top: 7.5%;
+    }
+    .hire-container {
+        margin-top: 7.5%;
+    }
+    .blog-container {
+        margin-top: 7.5%;
+    }
+    .admin-container {
+        margin-top: 7.5%;
+    }
+}
+/* screen width */
+@media screen and (max-width: 1400px) {
+    .welcome-container {
+        margin-left: 20%;
+    }
+    .about-container {
+        margin-left: 20%;
+    }
+    .portfolio-container {
+        margin-left: 20%;
+    }
+    .resume-container {
+        margin-left: 20%;
+    }
+    .hire-container {
+        margin-left: 20%;
+    }
+    .blog-container {
+        margin-left: 20%;
+    }
+    .admin-container {
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1124px) {
+    .portfolio-text {
+        opacity: 1;
+    }
+    .portfolio-big {
+        width: 100%;
+    }
+    .portfolio-small {
+        width: 100%;
+    }
+    .portfolio-bgd {
+        width: 400px;
+        height: 300px;
+    }
+    .portfolio-label-bgd {
+        width: 100%;
+        height: 270px;
+    }
+    .portfolio-label-bgd-small {
+        width: 100%;
+    }
+    .portfolio-bgd-image {
+        height: 100%;
+        width: auto;
+    }
+    .welcome-container {
+        margin-left: 22.5%;
+    }
+    .about-container {
+        margin-left: 22.5%;
+    }
+    .portfolio-container {
+        margin-left: 22.5%;
+    }
+    .resume-container {
+        margin-left: 22.5%;
+    }
+    .hire-container {
+        margin-left: 22.5%;
+    }
+    .blog-container {
+        margin-left: 22.5%;
+    }
+    .admin-container {
+        margin-left: 22.5%;
+    }
+}
+@media screen and (max-width: 964px) {
+    .css-typing {
+        display: none;
+    }
+    .welcome-container {
+        margin-left: 25%;
+        width: 65%;
+        margin-top: 12%;
+    }
+    .about-container {
+        margin-left: 25%;
+        width: 65%;
+        margin-top: 12%;
+    }
+    .portfolio-container {
+        margin-left: 25%;
+        margin-top: 12%;
+    }
+    .resume-container {
+        margin-left: 25%;
+        width: 65%;
+        margin-top: 12%;
+    }
+    .hire-container {
+        margin-left: 25%;
+        width: 65%;
+        margin-top: 12%;
+    }
+    .blog-container {
+        margin-left: 25%;
+        width: 65%;
+        margin-top: 12%;
+    }
+    .admin-container {
+        margin-left: 25%;
+        width: 65%;
+        margin-top: 12%;
+    }
+}
+@media screen and (max-width: 720px) {
+    .welcome-container {
+        margin-left: 30%;
+        width: 60%;
+        margin-top: 10%;
+    }
+    .about-container {
+        margin-left: 30%;
+        width: 60%;
+        margin-top: 10%;
+    }
+    .portfolio-container {
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+    .resume-container {
+        margin-left: 30%;
+        width: 60%;
+        margin-top: 10%;
+    }
+    .hire-container {
+        margin-left: 30%;
+        width: 60%;
+        margin-top: 10%;
+    }
+    .blog-container {
+        margin-left: 30%;
+        width: 60%;
+        margin-top: 10%;
+    }
+    .admin-container {
+        margin-left: 30%;
+        width: 60%;
+        margin-top: 10%;
+    }
+}
+@media (orientation:portrait) {
+    .contact-key {
+        font-size: 2.3em;
+        margin: 15px;
+    }
+    .menu-key {
+        font-size: 2em;
+        height: 55px;
+    }
+    .css-typing {
+        display: none;
+    }
+    .about-container {
+        max-height: 90%;
+    }
+    .portfolio-container {
+        max-height: 90%;
+    }
+    .resume-container {
+        max-height: 85%;
+    }
+    .hire-container {
+        max-height: 90%;
+    }
+    .blog-container {
+        max-height: 90%;
+    }
+    .admin-container {
+        max-height: 90%;
+    }
+}
