@@ -79,7 +79,7 @@ def assign_icon():
     # utc minus 5, server is on utc
     start = datetime.time(17, 0, 0)
     end = datetime.time(7, 0, 0)
-    night = time_in_range(start, end, datetime.datetime.now().time())
+    night = time_in_range(start, end, (datetime.datetime.now() - datetime.timedelta(hours=5)).time())
     if len(w.get_snow().items()) != 0:
         return "fa fa-snowflake-o"
     elif len(w.get_rain().items()) != 0:
