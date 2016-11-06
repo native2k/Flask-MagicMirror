@@ -31,12 +31,12 @@ a {
     padding-right: 5%;
     font-family: 'Titillium Web', sans-serif;
     color: #333;
-    margin-left: 5%;
-    margin-top: 10%;
+    margin-left: 8%;
+    margin-top: 5%;
     max-height: 80%;
     width: 75%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 th {
     padding-right: 25px;
