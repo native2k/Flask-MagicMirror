@@ -15,8 +15,8 @@ function getTime(adjHour, adjMin) {
 
 setInterval(function() {
     getTime(5, 0);
-}, 5000);
+}, 1000);
 
-setInterval(function() {
-    window.location.reload(false);
-}, 3600000);
+setTimeout(function() {
+    window.location.reload(true);
+}, 60000);
