@@ -31,8 +31,8 @@ a {
     padding-right: 5%;
     font-family: 'Titillium Web', sans-serif;
     color: #333;
-    margin-left: 10%;
-    margin-top: 5%;
+    margin-left: 5%;
+    margin-top: 10%;
     max-height: 80%;
     width: 75%;
     overflow-x: hidden;
@@ -49,6 +49,7 @@ th {
     color: #f8f8f8;
 }
 .subtitle {
+    margin-left: 20px;
     font-weight: 400;
     font-size: 1em;
     color: #f8f8f8;
