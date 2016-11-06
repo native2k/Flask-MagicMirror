@@ -1,7 +1,8 @@
 **Flask MagicMirror**
 
 A simple magic mirror application built in Flask for my fiancee and I. 
-The HTML isn't clean so I may add bootstrap later to help with that. 
+The HTML isn't clean so I may add bootstrap later to help with that. It 
+currently looks like it's held together with spit. 
 
 1. Current time
     * Day of Week

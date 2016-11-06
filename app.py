@@ -76,6 +76,7 @@ def time_in_range(start, end, x):
 # assign weather icon
 def assign_icon():
     cloud_perc = w.get_clouds()
+    # utc minus 5, server is on utc
     start = datetime.time(17, 0, 0)
     end = datetime.time(7, 0, 0)
     night = time_in_range(start, end, datetime.datetime.now().time())
@@ -103,6 +104,11 @@ def home():
                            humidity=w.get_humidity(),
                            icon=assign_icon()
                            )
+
+
+# the weather api is limited in the number of daily requests, so we need to retrieve that info every hour
+# and store it temporarily
+# then figure out a way to update the clock every minute
 
 
 # run #

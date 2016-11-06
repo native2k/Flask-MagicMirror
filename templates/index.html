@@ -17,14 +17,11 @@
 </head>
 <body>
     <div class="landing-container">
-        <div class="welcome-container" id="welcome">
-            <div class="title" id="welcome-title"></div>
-        </div>
         <div class="about-container" id="about">
             <div class="title">
                 <div style="font-weight: 100;">{{ dow }}, {{ month }} {{ date }}
                 </div>
-                {{ time }}
+                <div id="updatetime">{{ time }}</div>
             </div>
             <br>
             <br>
@@ -64,5 +61,10 @@
 </body>
 <!-- javascript -->
 <script src="{{ url_for('static', filename='js/velocity.js') }}"></script>
-<script src="{{ url_for('static', filename='js/styles.js') }}"></script>
+<script src="{{ url_for('static', filename='js/styles.js') }}">
+<script>
+    <!--setInterval(function(){-->
+        <!--document.getElementById("updatetime").innerHTML = (new Date()).toLocaleTimeString();-->
+    <!--}, 1000);-->
+</script>
 </html>

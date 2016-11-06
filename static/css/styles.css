@@ -31,7 +31,8 @@ a {
     padding-right: 5%;
     font-family: 'Titillium Web', sans-serif;
     color: #333;
-    margin: 4% 10% 20% 20%;
+    margin-left: 10%;
+    margin-top: 5%;
     max-height: 80%;
     width: 75%;
     overflow-x: hidden;
@@ -43,12 +44,12 @@ th {
     font-size: 1em;
 }
 .title {
-    font-weight: 400;
+    font-weight: 100;
     font-size: 4em;
     color: #f8f8f8;
 }
 .subtitle {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1em;
     color: #f8f8f8;
     text-shadow: none;
@@ -96,7 +97,7 @@ a:hover {
     from { width: 0; }
 }
 /* screen height */
-@media screen and ( max-height: 768px ){
+/*@media screen and ( max-height: 768px ){
     .welcome-container {
         margin-top: 10%;
     }
@@ -143,7 +144,7 @@ a:hover {
     }
 }
 /* screen width */
-@media screen and (max-width: 1400px) {
+/*@media screen and (max-width: 1400px) {
     .welcome-container {
         margin-left: 20%;
     }
@@ -318,4 +319,4 @@ a:hover {
     .admin-container {
         max-height: 90%;
     }
-}
+}*/
